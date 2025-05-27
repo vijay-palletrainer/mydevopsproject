@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Checkout</h2>
+<form method="POST">
+  <div class="mb-3">
+    <label class="form-label">Card Number</label>
+    <input type="text" class="form-control" placeholder="1234 5678 9012 3456" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Expiration</label>
+    <input type="text" class="form-control" placeholder="MM/YY" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">CVV</label>
+    <input type="text" class="form-control" placeholder="123" required>
+  </div>
+  <h4>Total: ${{ total }}</h4>
+  <button type="submit" class="btn btn-success">Pay Now</button>
+</form>
+{% endblock %}
