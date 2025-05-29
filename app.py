@@ -15,6 +15,8 @@ PRODUCTS = [
     {'id': 8, 'name': 'Speaker', 'price': 120},
     {'id': 9, 'name': 'Tablet', 'price': 400},
     {'id': 10, 'name': 'Charger', 'price': 25},
+    {'id': 10, 'name': 'cellphone', 'price': 25},
+    {'id': 10, 'name': 'PowerBank', 'price': 25},
 ]
 
 
