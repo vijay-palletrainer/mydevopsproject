@@ -10,7 +10,7 @@ phases:
   pre_build:
     commands:
       - aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 643426214971.dkr.ecr.ap-south-1.amazonaws.com
-      - pytest test_app.py
+      - python test_app.py
 
   build:
     commands:
